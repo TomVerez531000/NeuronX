@@ -1,6 +1,8 @@
+print("[Neron X]: Loading")
 if not game:IsLoaded() then
 	game.Loaded:Wait()
 end
+print("[Neron X]: Game loaded")
 
 script.Parent.Main.ExploitName.RichText = true
 
