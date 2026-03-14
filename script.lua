@@ -27,6 +27,7 @@ local Save = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
 local Scripts = Instance.new("ScrollingFrame")
 local exemplefile = Instance.new("TextButton")
+local UIListLayout = Instance.new("UIListLayout")
 local SaveUi = Instance.new("Frame")
 local UICorner_8 = Instance.new("UICorner")
 local title_2 = Instance.new("TextLabel")
@@ -45,7 +46,7 @@ local SettingsPannel = Instance.new("Frame")
 local Cacti = Instance.new("Frame")
 local ShowCacti = Instance.new("Frame")
 local title_3 = Instance.new("TextLabel")
-local UIListLayout = Instance.new("UIListLayout")
+local UIListLayout_2 = Instance.new("UIListLayout")
 local container = Instance.new("Frame")
 local Checkbox = Instance.new("TextButton")
 local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
@@ -249,6 +250,9 @@ exemplefile.TextScaled = true
 exemplefile.TextSize = 14.000
 exemplefile.TextWrapped = true
 
+UIListLayout.Parent = Scripts
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
 SaveUi.Name = "SaveUi"
 SaveUi.Parent = Main
 SaveUi.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -422,9 +426,9 @@ title_3.TextWrapped = true
 title_3.TextXAlignment = Enum.TextXAlignment.Left
 title_3.TextYAlignment = Enum.TextYAlignment.Top
 
-UIListLayout.Parent = ShowCacti
-UIListLayout.FillDirection = Enum.FillDirection.Horizontal
-UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_2.Parent = ShowCacti
+UIListLayout_2.FillDirection = Enum.FillDirection.Horizontal
+UIListLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
 
 container.Name = "container"
 container.Parent = ShowCacti
@@ -545,7 +549,7 @@ UIPadding_6.PaddingTop = UDim.new(0, 3)
 
 -- Scripts:
 
-local function AWVFVUN_fake_script() -- NeuronX.main 
+local function LKFPY_fake_script() -- NeuronX.main 
 	local script = Instance.new('LocalScript', NeuronX)
 
 	print("[Neron X]: Loading...")
@@ -719,4 +723,4 @@ local function AWVFVUN_fake_script() -- NeuronX.main
 	
 	print("[Neron X]: Script fully loaded!")
 end
-coroutine.wrap(AWVFVUN_fake_script)()
+coroutine.wrap(LKFPY_fake_script)()
