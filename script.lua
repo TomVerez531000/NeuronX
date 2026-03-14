@@ -1,8 +1,12 @@
--- ultimate topmost script
+if not game:IsLoaded() then
+	game.Loaded:Wait()
+end
 
+script.Parent.Main.ExploitName.RichText = true
+
+-- ultimate topmost script
 -- set layout order of NeuronX to huge number
 script.Parent.DisplayOrder = 9999999999999
-script.Parent.Main.ExploitName.RichText = true
 script.Parent:GetPropertyChangedSignal("DisplayOrder"):Connect(function()
 	script.Parent.DisplayOrder = 9999999999999
 end)
